@@ -1,0 +1,17 @@
+{
+  "name": "vue chrome extension boilerplate",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": ["activeTab", "http://localhost.com:8080/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["reload.js"]
+  },
+  "web_accessible_resources": ["inject.js"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

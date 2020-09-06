@@ -1,0 +1,26 @@
+writeup chrome://flags/#allow-insecure-localhost
+
+add reload script to dev manifest
+
+serve --https
+
+enable cors webpack
+
+host localhost
+
+"serve": "vue-cli-service serve --host 127.0.0.1 --https",
+
+
+
+if i am fighting page js or want to resond to page js events, communicate through messages
+chrome.runtime.onMessage.addListener
+
+assets like images to be added to manifest...
+
+
+todo
+write manifest.prod.json
+
+build scripts
+
+
